@@ -1,0 +1,159 @@
+/* Basic  ---------------------------------------- */
+.clear { clear: both; }
+
+body {
+	background:url(../images/bj.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}
+
+a {
+	color:#369;
+	text-decoration:none;
+}
+
+a:hover{
+	background:#06F;
+	color:#FFF;
+}
+
+/*Content------------------------------------------*/
+
+#admin_top_menu{
+	width:100%;
+	height:30px;
+	background:#FFF;
+	border-bottom:1px dashed #999;
+	font-size:12px;
+	color:#060;
+}
+
+#admin_center_content{
+	width:1000px;
+	height:500px;
+	background:#FFF;
+	margin:0px auto;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px dashed #999;
+}
+
+#admin_foot{
+	width:1000px;
+	background:#FFF;
+	font-size:11px;
+	margin:0px auto;
+	padding:10px 0px 10px 0px;
+}
+
+#admin_foot a{
+	font-size:12px;
+	margin:0px 5px 0px 5px;
+}
+
+#admin_foot_left{
+	width:500px;
+	color:#999;
+	float:left;
+}
+
+#admin_foot_right{
+	width:500px;
+	text-align:right;
+	font-size:12px;
+	float:left;
+}
+
+#admin_top_menu_content{
+	width:1000px;
+	height:30px;
+	margin:0px auto;
+	line-height:30px;
+}
+
+
+#admin_top_menu_content span{
+	height:30px;
+	margin:0px 5px 0px 5px;
+}
+
+#admin_center_left{
+	width:580px;
+	padding:0px 10px;
+	float:left;
+}
+
+#admin_center_right{
+	width:400px;
+	float:left;
+}
+
+#admin_center_right_content{
+	width:380px;
+	margin:100px 0px 0px 10px;
+}
+
+#admin_center_right_content span{
+	width:380px;
+	height:25px;
+	line-height:25px;
+}
+
+#admin_center_left_logo{
+	height:50px;
+	line-height:50px;
+	border:1px solid #CCC;
+	padding:5px;
+}
+
+#admin_center_left_title{
+	font-size:26px;
+	font-weight:bold;
+	margin:10px 0px 10px 0px;
+	color:#666;
+}
+
+#admin_center_left_table{
+	font-size:13px;
+	color:#000;
+	margin:10px auto;
+}
+
+#admin_center_left_table tr{
+	height:30px;
+	margin:10px auto;
+}
+
+#admin_center_left_table tr td{
+	height:30px;
+	line-height:30px;
+	margin:10px auto;
+}
+
+#admin_center_left_table tr td span{
+	margin-left:10px;
+}
+
+.shortinput{
+	width:100px;
+	height:25px;
+	border:1px solid #CCC;
+	line-height:25px;
+	margin:5px auto;
+}
+
+.middleinput{
+	width:250px;
+	height:25px;
+	border:1px solid #CCC;
+	line-height:25px;
+	margin:5px auto;
+}
+
+.subinput{
+	width:235px;
+	height:77px;
+	border:0px;
+	background:url(../images/zc.gif) no-repeat;
+}

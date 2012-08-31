@@ -1,0 +1,237 @@
+/* Basic  ---------------------------------------- */
+.clear { clear: both; }
+
+body {
+	background: #111;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+}
+
+/* Contents  ---------------------------------------- */
+
+#main{
+	width:900px;
+	background:#fff;
+	margin: 0px auto;
+}
+
+#login_top{
+	width:900px;
+	height:132px;
+	background:url(../images/login_top.gif);
+	float:left;
+}
+
+#login_center{
+	width:900px;
+	height:325px;
+	background:#ddd;
+	float:left;
+}
+
+#login_center #login_center_left{
+	width:197px;
+	height:325px;
+	background:url(../images/login_left.gif);
+	float:left;
+}
+
+#login_center #login_center_center{
+	width:518px;
+	height:325px;
+	float:left;
+}
+
+#login_center #login_center_right{
+	width:185px;
+	height:325px;
+	background:url(../images/login_right.gif);
+	float:left;
+}
+
+#login_bottom{
+	width:900px;
+	height:98px;
+	background:url(../images/login_bottom.gif);
+	float:left;
+}
+
+#login_foot{
+	width:880px;
+	height:30px;
+	padding:5px 10px 5px 10px;
+	background:#ccc;
+	display:block;
+	color:#666;
+	float:left;
+}
+
+#login_title{
+	width:518px;
+	height:55px;
+	float:left;
+}
+
+#login_title #login_title_content{
+	width:350px;
+	height:55px;
+	background:#444;
+	margin: 0px auto;
+}
+
+#login_title_left{
+	width:15px;
+	height:55px;
+	background:url(../images/login_title_left.gif);
+	float:left;
+}
+
+#login_title_center{
+	width:320px;
+	height:55px;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	font-family:"幼圆", "微软雅黑", "华文行楷", "华文细黑", "华文新魏", "方正舒体";
+	line-height:55px;
+	color:#FFF;
+	float:left;
+}
+
+#login_title_right{
+	width:15px;
+	height:55px;
+	background:url(../images/login_title_right.gif);
+	float:left;
+}
+
+#login_content{
+	width:518px;
+	height:240px;
+	font-size:14px;
+	font-weight:bold;
+	font-family:"幼圆", "微软雅黑", "华文行楷", "华文细黑", "华文新魏", "方正舒体";
+	color:#666;
+	margin-top:40px;
+	float:left;
+}
+
+#login_user{
+	width:350px;
+	height:30px;
+	margin: 10px auto;
+}
+
+#login_password{
+	width:350px;
+	height:30px;
+	margin: 10px auto;
+}
+
+#login_checkimg{
+	width:350px;
+	height:30px;
+	margin: 10px auto;
+}
+
+#login_buttom{
+	width:350px;
+	height:40px;
+	margin: 10px auto;
+	text-align:center;
+}
+
+.textfont{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	float:left;
+}
+
+.inputfont{
+	width:270px;
+	height:30px;
+	line-height:30px;
+	float:left;
+	background:#FFF;
+}
+
+.uinput{
+	width:240px;
+	height:25px;
+	padding-left:25px;
+	border:#CCC 1px solid;
+	background:url(../images/login_user.gif) no-repeat;
+	line-height:25px;
+}
+
+.pinput{
+	width:240px;
+	height:25px;
+	padding-left:25px;
+	border:#CCC 1px solid;
+	background:url(../images/login_password.gif) no-repeat;
+	line-height:25px;
+}
+
+.cimginput{
+	width:100px;
+	height:25px;
+	border:#CCC 1px solid;
+	line-height:25px;
+}
+
+.buttomfont{
+	width:75px;
+	height:30px;
+	background:url(../images/login_buttom.gif);
+	border:0px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+}
+
+#buttomshow{
+	width:75px;
+	height:10px;
+	background:url(../images/login_buttom_show.gif);
+}
+
+#bleft{
+	width:75px;
+	height:40px;
+	margin: auto 10px;
+	float:left;
+}
+
+#bright{
+	width:75px;
+	height:40px;
+	margin: auto 10px;
+	float:left;
+}
+
+#bcontent{
+	width:190px;
+	height:40px;
+	margin:0px auto;
+}
+
+#foot_left{
+	width:300px;
+	height:30px;
+	font-size:14px;
+	line-height:30px;
+	float:left;
+}
+
+#foot_right{
+	width:580px;
+	height:30px;
+	font-size:14px;
+	text-align:right;
+	line-height:30px;
+	float:left;
+}

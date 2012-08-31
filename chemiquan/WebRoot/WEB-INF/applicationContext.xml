@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!--配置连接池 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3306/cmq</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>root</value>
+		</property>
+	</bean>
+	<!--构建sessionFactory 支持annotation* AnnotationSessionFactoryBean继承自LocalSessionFactoryBean -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"><!--.annotation.AnnotationSessionFactoryBean -->
+
+		<!-- 指定连接的dataSource -->
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<!-- XML格式的 -->
+		<property name="mappingResources">
+			<list>
+				<value>com/cmq/bean/Blog.hbm.xml</value>
+				<value>com/cmq/bean/Circle.hbm.xml</value>
+				<value>com/cmq/bean/CircleMember.hbm.xml</value>
+				<value>com/cmq/bean/Comment.hbm.xml</value>
+				<value>com/cmq/bean/FrashNews.hbm.xml</value>
+				<value>com/cmq/bean/Friends.hbm.xml</value>
+				<value>com/cmq/bean/Message.hbm.xml</value>
+				<value>com/cmq/bean/Photo.hbm.xml</value>
+				<value>com/cmq/bean/PhotoAlbum.hbm.xml</value>
+				<value>com/cmq/bean/UserConfig.hbm.xml</value>
+				<value>com/cmq/bean/UserInfor.hbm.xml</value>
+				<value>com/cmq/bean/UserOperateRecord.hbm.xml</value>
+				<value>com/cmq/bean/SystemEmailConfig.hbm.xml</value>
+				<value>com/cmq/bean/Admin.hbm.xml</value>
+
+			</list>
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+	<!-- DAO -->
+	<bean id="userInforDao" class="com.cmq.dao.impl.UserInforDaoImpl"
+		scope="singleton">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- Service -->
+	<bean id="userRegistService" class="com.cmq.service.impl.UserRegistServiceImpl"
+		scope="singleton">
+		<property name="userInforDao" ref="userInforDao"></property>
+	</bean>
+	<bean id="userLoginService" class="com.cmq.service.impl.UserLoginServiceImpl"
+		scope="singleton">
+		<property name="userInforDao" ref="userInforDao"></property>
+	</bean>
+
+	<!-- ACTION -->
+	<bean id="userRegist" class="com.cmq.action.UserRegistAction"
+		scope="prototype">
+		<property name="userRegistService" ref="userRegistService"></property>
+	</bean>
+	<bean id="userLogin" class="com.cmq.action.UserLoginAction" scope="prototype">
+		<property name="userLoginService" ref="userLoginService"></property>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

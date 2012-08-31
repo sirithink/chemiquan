@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+    <head>
+    	
+        <title>
+        	index
+        </title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <META content="汽车圈" name=keywords>
+		<META content="汽车圈" name=description>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+        	
+			$(document).ready(
+			function() 
+			{
+				$(".menuTitle").click(function(){
+					$(this).next("div").slideToggle("slow")
+					.siblings(".menuContent:visible").slideUp("slow");
+					$(this).toggleClass("activeTitle");
+					$(this).siblings(".activeTitle").removeClass("activeTitle");
+				});
+			});
+			
+        </script>
+        
+    </head>
+    
+    <body>
+    	
+        <div id="main">
+        	
+            <div id="admin_top">
+            	
+                <div id="admin_top_title">
+                	汽车圈后台管理系统
+                </div>
+                
+                <div id="admin_top_buttom">
+                	
+                    <div id="admin_top_buttom_content">
+                    	
+                        <!--添加一个触发事件，当点击的时候换CSS样式-->
+                        <!--
+                        <div id="admin_top_buttom_binfo">
+                            
+                            <div id="admin_top_buttom_bleft">
+                            	
+                            </div>
+                            
+                            <div id="admin_top_buttom_btext">
+                            	常用管理
+                            </div>
+                            
+                            <div id="admin_top_buttom_bright">
+                            	
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="admin_top_buttom_info">
+                            
+                            <div id="admin_top_buttom_left">
+                            	
+                            </div>
+                            
+                            <div id="admin_top_buttom_text">
+                            	常用管理
+                            </div>
+                            
+                            <div id="admin_top_buttom_right">
+                            	
+                            </div>
+                            
+                        </div>
+                        -->
+                        
+                    </div>
+                    
+                </div>
+                
+                <div id="admin_top_content">
+                	
+                    <div id="admin_top_content_left">
+                    	现在时间：2012年7月23日 星期四 17:48:51
+                    </div>
+                    
+                    <div id="admin_top_content_right">
+                    	
+                        <div id="admin_top_content_exit">
+                        	<a href="#">安全退出</a>
+                        </div>
+                        
+                        <div id="admin_top_content_home">
+                        	<a href="#">网站首页</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div id="admin_center">
+            	<!--左边菜单-->
+                <div id="admin_left">
+                	
+                    <div id="admin_left_list">
+                    	
+                        <div class="menuTitle">
+                            <span id="admin_menuTitle"> </span>
+                            <span id="admin_title">
+                            ALICMS
+                            </span>
+                        </div>
+                        <div class="menuContent">
+                            <ul>
+                                <li> <a href="#">欢迎访问</a></li>
+                                <li><a href="#"> 模板王 </a></li>
+                                <li><a href="#"> 哈哈哈哈</a></li>
+                            </ul>
+                        </div>
+                        <div class="menuTitle">
+                        	<span id="admin_menuTitle"> </span>
+                        	<span id="admin_title">
+                            文章模块
+                            </span>
+                        </div>
+                        <div class="menuContent">
+                            <ul>
+                                <li> <a href="#">前端技术</a></li>
+                                <li> <a href="#">编程技术</a></li>
+                                <li> <a href="#">站长资讯</a></li>
+                            </ul>
+                        </div>
+                        <div class="menuTitle">
+                            <span id="admin_menuTitle"> </span>
+                            <span id="admin_title">
+                            下载模块
+                            </span>
+                        </div>
+                        <div class="menuContent">
+                            <ul>
+                                <li> <a href="#">您自定义</a></li>
+                                <li> <a href="#">您自定义</a></li>
+                                <li> <a href="#">您自定义</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="admin_left_show">
+                    	
+                        <div id="admin_left_show_title">
+                        	<span class="_title">技术支持</span>
+                        </div>
+                        
+                        <div id="admin_left_show_content">
+                        	<ul>
+                            	<li>a</li>
+                                <li>a</li>
+                                <li>a</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div id="admin_middle"></div>
+                
+                <!--右边内容-->
+                <div id="admin_right">
+                	
+                    <div id="admin_right_maincontent">
+                    
+                    <div id="admin_right_content">
+                    	
+                        <div id="admin_right_content_title">
+                        	<div id="admin_right_content_title_text">功能标题</div>
+                            <div id="admin_right_content_title_close">
+                                <span onclick="scContent('admin_right_content_text')"><img src="images/sx.gif" border="0" /></span>
+                            	<span onclick="scContent('admin_right_maincontent')"><img src="images/close.gif" border="0" /></span>
+                            </div>
+                        </div>
+                    	
+                        <div id="admin_right_content_text">
+                        	
+                            <table border="0" cellpadding="0" cellspacing="0" id="admin_right_table">
+                                
+                                <tr>
+                                    <th width="50">序号</th>
+                                    <th width="400">内容</th>
+                                    <th width="250">操作</th>
+                                </tr>
+                                
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                </tr>
+                                
+                            </table>
+                            
+                            <div id="admin_right_text">
+                             
+                                <form name="f" action="#" method="post">
+                                
+                                共有 100 条信息,每页 20 条,当前 1/7 页. 
+                                
+                                <a href="#">首 页</a> | 
+                                <a href="#">上一页</a> | 
+                                <a href="#">下一页</a> | 
+                                <a href="#">尾 页</a>
+                                
+                                跳转到<input type="text" class="textinput" size="4" />
+                                
+                                <input type="submit" class="subinput" value="GO" />
+                                
+                                </form>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="admin_show_left"></div>
+                    <div id="admin_show_right"></div>
+                    
+                    </div>
+                    
+                    <div id="admin_right_gn">
+                    
+                    <div class="admin_right_maingncontent" id="admin_right_maingncontent1">
+                    
+                    <div class="admin_right_gncontent" id="admin_right_gncontent1">
+                    	
+                        <div id="admin_right_gncontent_title">
+                        	
+                        	<div id="admin_right_gncontent_title_text">
+                            	功能
+                            </div>
+                            
+                            <div id="admin_right_gncontent_title_close">
+                            	<span onclick="scContent('admin_right_gncontent_content1')"><img src="images/sx.gif" border="0" /></span>
+                            	<span onclick="scContent('admin_right_maingncontent1')"><img src="images/close.gif" border="0" /></span>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="admin_right_gncontent_content1"  class="admin_right_gncontent_content">
+                        	test
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="admin_show_gn_left"></div>
+                    <div id="admin_show_gn_right"></div>
+                    
+                    </div>
+                    
+                    <div class="admin_right_maingncontent" id="admin_right_maingncontent2">
+                    
+                    <div class="admin_right_gncontent" id="admin_right_gncontent2">
+                    	
+                        <div id="admin_right_gncontent_title">
+                        	
+                        	<div id="admin_right_gncontent_title_text">
+                            	功能
+                            </div>
+                            
+                            <div id="admin_right_gncontent_title_close">
+                            	<span onclick="scContent('admin_right_gncontent_content2')"><img src="images/sx.gif" border="0" /></span>
+                            	<span onclick="scContent('admin_right_maingncontent2')"><img src="images/close.gif" border="0" /></span>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="admin_right_gncontent_content2"  class="admin_right_gncontent_content">
+                        	test
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="admin_show_gn_left"></div>
+                    <div id="admin_show_gn_right"></div>
+                    
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div id="admin_foot">
+            	POWERD BY Jadmin1.3 @ 2012-2012 QICHEQUAN.COM All Rights Reserved.
+            </div>
+            
+        </div>
+        
+    </body>
+	
+</html>
