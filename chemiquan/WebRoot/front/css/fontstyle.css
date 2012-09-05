@@ -126,8 +126,8 @@ a:hover{
 }
 
 #admin_center_left_table tr td{
-	height:30px;
-	line-height:30px;
+	height:40px;
+	line-height:40px;
 	margin:10px auto;
 }
 
@@ -136,19 +136,25 @@ a:hover{
 }
 
 .shortinput{
-	width:100px;
-	height:25px;
-	border:1px solid #CCC;
-	line-height:25px;
-	margin:5px auto;
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 100px;
+	margin:10px 0px 10px 0px;
+	float:left;
 }
 
 .middleinput{
-	width:250px;
-	height:25px;
-	border:1px solid #CCC;
-	line-height:25px;
-	margin:5px auto;
+	border: 1px solid #ddd;
+	background: #fff url(../images/input-shaddow.gif) no-repeat left top;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #646464;
+	padding: 5px 7px;
+	width: 220px;
+	margin:10px 0px 10px 0px;
+	float:left;
 }
 
 .subinput{

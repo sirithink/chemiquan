@@ -15,6 +15,9 @@ public class UserLoginServiceImpl implements UserLoginService {
 		String password = user.getPassword();
 		String email = user.getEmail();
 		String name = user.getName();
+		
+		System.out.println(email+"  ::  "+name);
+		
 		user = userInforDao.getUserInforByEmailAndPassword(email, password);
 		if (user == null) {
 			user = userInforDao.getUserInforByNameAndPassword(name, password);

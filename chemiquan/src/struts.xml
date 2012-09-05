@@ -12,7 +12,14 @@
 		</action>
 		<!-- 登录 -->
 		<action name="userLogin" class="userLogin" method="login">
-			<result  name="success">index.html</result>
+			<result  name="error">error.html</result>
+			<result type="redirectAction" name="success">index</result>
 		</action>
+		
+		<!-- 主页 -->
+		<action name="index" class="indexAction" method="showIndex">
+			<result name="success">page/front/index.jsp</result>
+		</action>
+		
 	</package>
 </struts>

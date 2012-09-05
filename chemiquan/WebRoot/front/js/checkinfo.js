@@ -107,7 +107,7 @@ function checkTruePassword(tid,sid,pid){
 		$('#'+sid).html("<font color='green'><img src='images/right-icon.jpg' width='15' height='15' /></font>");
 		return true;
 	}else{
-		$('#'+sid).html("<font color='red'><img src='images/false-icon.jpg' width='15' height='15' />密码不同</font>");
+		$('#'+sid).html("<font color='red'><img src='images/false-icon.jpg' width='15' height='15' />密码不一致</font>");
 		return false;
 		
 	}

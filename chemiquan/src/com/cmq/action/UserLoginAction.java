@@ -19,7 +19,7 @@ public class UserLoginAction extends ActionSupport {
 	/** 依赖于Spring的注入 */
 	private UserLoginService userLoginService;
 	/** 可以使用邮箱或者昵称登录 */
-	private String email_or_name;
+	private String emailorname;
 	private String password;
 
 	/** 获取系统session 登录成功后存入 */
@@ -31,9 +31,11 @@ public class UserLoginAction extends ActionSupport {
 	 */
 	public String login() {
 		UserInfor user = new UserInfor();
-		user.setName(email_or_name);
-		user.setEmail(email_or_name);
+		user.setName(emailorname);
+		user.setEmail(emailorname);
 		user.setPassword(password);
+		System.out.println("emailorname:"+emailorname);
+		System.out.println("ACTION:"+user.getEmail()+"  ::  "+user.getName());
 		user = userLoginService.login(user);
 		if (user != null) {
 			session.put("user", user);
@@ -51,19 +53,19 @@ public class UserLoginAction extends ActionSupport {
 		this.userLoginService = userLoginService;
 	}
 
-	public String getEmail_or_name() {
-		return email_or_name;
-	}
-
-	public void setEmail_or_name(String email_or_name) {
-		this.email_or_name = email_or_name;
-	}
-
 	public String getPassword() {
 		return password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getEmailorname() {
+		return emailorname;
+	}
+
+	public void setEmailorname(String emailorname) {
+		this.emailorname = emailorname;
 	}
 }
