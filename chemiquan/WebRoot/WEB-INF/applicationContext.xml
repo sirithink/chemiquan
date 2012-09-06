@@ -82,6 +82,9 @@
 	<bean id="userLogin" class="com.cmq.action.UserLoginAction" scope="prototype">
 		<property name="userLoginService" ref="userLoginService"></property>
 	</bean>
+	<bean id="showIndex" class="com.cmq.action.IndexAction" scope="prototype">
+		<!--  <property name="userLoginService" ref="userLoginService"></property>-->
+	</bean>
 
 </beans>
 

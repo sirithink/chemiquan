@@ -1,0 +1,27 @@
+/*常规设置-------------------------------------*/
+html, body { width: 100%; height: auto; _height: 100%; background:url(../images/bj.gif);}
+body, button, input, select, textarea { font: 12px/1.125 Arial, Helvetica, sans-serif; }
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr { padding: 0; margin: 0; }
+fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:normal;font-weight:normal}
+ul,ol{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+a {
+	color:#369;
+	text-decoration:none;
+}
+
+a:hover{
+	background:#06F;
+	color:#FFF;
+}
+
+#main{
+	width:1000px;
+	margin:0px auto;
+	background:#FFF;
+}
+
+.clear { clear: both; }
+

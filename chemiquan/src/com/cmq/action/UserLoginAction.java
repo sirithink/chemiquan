@@ -34,8 +34,6 @@ public class UserLoginAction extends ActionSupport {
 		user.setName(emailorname);
 		user.setEmail(emailorname);
 		user.setPassword(password);
-		System.out.println("emailorname:"+emailorname);
-		System.out.println("ACTION:"+user.getEmail()+"  ::  "+user.getName());
 		user = userLoginService.login(user);
 		if (user != null) {
 			session.put("user", user);

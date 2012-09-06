@@ -1,22 +1,26 @@
 package com.cmq.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * 
  * @author Andrew
  * 
- *         ндуб╠М
+ *         
  */
 
 public class Blog {
 	private long id;
 	private long user_id;
+	private long category_id;
+	
 	private Date publish_time;
 	private String title;
 	private String content;
 	private int comment_count;
 	private int visitor_count;
+	private long belong_id;
+	private boolean synchro;
 
 	public long getId() {
 		return id;
@@ -72,5 +76,29 @@ public class Blog {
 
 	public void setVisitor_count(int visitor_count) {
 		this.visitor_count = visitor_count;
+	}
+
+	public long getCategory_id() {
+		return category_id;
+	}
+
+	public void setCategory_id(long category_id) {
+		this.category_id = category_id;
+	}
+
+	public long getBelong_id() {
+		return belong_id;
+	}
+
+	public void setBelong_id(long belong_id) {
+		this.belong_id = belong_id;
+	}
+
+	public boolean isSynchro() {
+		return synchro;
+	}
+
+	public void setSynchro(boolean synchro) {
+		this.synchro = synchro;
 	}
 }

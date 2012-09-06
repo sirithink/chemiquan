@@ -11,11 +11,14 @@
 		</id>
 
 		<property name="user_id" column="user_id" type="long" ></property>
+		<property name="category_id" column="category_id" type="long" ></property>
 		<property name="title" column="title" type="string"></property>
 		<property name="content" column="content" type="string"></property>
 		<property name="comment_count" column="comment_count" type="integer"></property>
 		<property name="visitor_count" column="visitor_count" type="integer"></property>
 		<property name="publish_time" column="publish_time" type="date"></property>
+		<property name="belong_id" column="belong_id" type="long"></property>
+		<property name="synchro" column="synchro" type="boolean"></property>
 
 
 

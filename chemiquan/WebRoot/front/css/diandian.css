@@ -1,0 +1,18 @@
+/*公共的CSS*/
+body{
+	background:#ddd;
+}
+
+/*dd_main*/
+#dd_main{
+	width:1000px;
+	margin:0px auto;
+}
+
+/*dd_top*/
+#dd_top{
+	width:1000px;
+	height:50px;
+	float:left;
+}
+

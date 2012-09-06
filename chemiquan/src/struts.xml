@@ -17,8 +17,8 @@
 		</action>
 		
 		<!-- 主页 -->
-		<action name="index" class="indexAction" method="showIndex">
-			<result name="success">page/front/index.jsp</result>
+		<action name="index" class="showIndex" method="showIndex">
+			<result name="success">front/index.jsp</result>
 		</action>
 		
 	</package>
