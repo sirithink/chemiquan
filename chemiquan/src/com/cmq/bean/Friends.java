@@ -4,7 +4,6 @@ package com.cmq.bean;
  * 
  * @author Andrew
  * 
- *        储存所有的朋友关系
  */
 
 public class Friends {

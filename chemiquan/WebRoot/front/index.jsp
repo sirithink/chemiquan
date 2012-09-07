@@ -49,7 +49,7 @@
 							<%
 								} else {
 							%>
-							<li><a href="#"><%=user.getEmail()%></a></li>
+							<li><a href="showHomePage?id=<%=user.getId() %>"><%=user.getEmail()%></a></li>
 							<%
 								}
 							%>

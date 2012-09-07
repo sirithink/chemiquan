@@ -20,6 +20,10 @@
 		<action name="index" class="showIndex" method="showIndex">
 			<result name="success">front/index.jsp</result>
 		</action>
+		<!-- 个人主页 -->
+		<action name="showHomePage" class="showHomePage" method="showHomePage">
+			<result name="success">/front/myhomepage.jsp</result>
+		</action>
 		
 	</package>
 </struts>

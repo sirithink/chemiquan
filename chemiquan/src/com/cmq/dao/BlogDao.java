@@ -1,5 +1,7 @@
 package com.cmq.dao;
 
+import java.util.ArrayList;
+
 import com.cmq.bean.Blog;
 
 /**
@@ -18,5 +20,20 @@ public interface BlogDao {
 	 */
 
 	boolean save(Blog blog);
+
+	/**
+	 * 通过BlogCategoryId查找blog
+	 * 
+	 * @param id
+	 * @return 装满blog的ArrayList
+	 */
+	ArrayList findBlogByBlogCategoryId(long id);
+
+	/**
+	 * 通过page得到对应的bloglist
+	 * @param page
+	 * @return ArrayList<Blog>
+	 */
+	ArrayList<Blog> getBlogListByPage(int page,int pageSize);
 
 }

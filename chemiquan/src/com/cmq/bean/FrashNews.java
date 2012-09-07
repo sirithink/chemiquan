@@ -1,12 +1,12 @@
 package com.cmq.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * 
  * @author Andrew
  * 
- *         ндуб╠М
+ *         
  */
 
 public class FrashNews {

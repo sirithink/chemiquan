@@ -20,6 +20,7 @@
         <script src="js/zsrz.js" type="text/javascript"></script>
         
         <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+        <script language="javascript" type="text/javascript" src="datepicker/WdatePicker.js"></script>
         
         
     </head>
@@ -175,9 +176,45 @@
                 	
                     <!--main_userbg-->
                     
+                    <form action="#" name="f" method="post">
                     <div class="main_userbg">
                     	
+                        <!--这是右边的内容-->
+                        <div id="main_user_rightbg">
+                        	
+                            <div id="main_user_right_textbg">
+                            	<select name="t">
+                                	<option value="1" onclick="closeDataClick('showData')" selected>现在发布</option>
+                                    <option value="2">加入到自动发布列表</option>
+                                    <option value="3" onclick="showDataClick('showData')">定时发布</option>
+                                </select>
+                                
+                                <div class="main_user_right_data" id="showData" style="display:none;">
+                                	<input class="Wdate" type="text" value="2012-01-01" id="d15" onFocus="WdatePicker({isShowClear:false,readOnly:true})"/>
+                                    <input type="text" name="h" value="" style="width:20px; height:20px; border:1px solid #ccc; margin:0px 5px 0px 10px;" />:
+                                    <input type="text" name="s" value="" style="width:20px; height:20px; border:1px solid #ccc;" />
+                                </div>
+                                
+                                <textarea>添加标签用逗号或回车分隔符分开</textarea>
+                            </div>
+                            
+                            <div id="main_user_right_textbg">
+                            	<p>自定义链接</p>
+                                <p><a href="#">www.qcq.com</a></p>
+                            </div>
+                            <div id="main_user_right_textbg">
+                            	<p><input type="checkbox" name="c" value="1" />仅自己可见</p>
+                                <p><input type="checkbox" name="c" value="2" />文章置顶</p>
+                            </div>
+                            
+                            <div id="main_user_right_otherbg">
+                            	其他内容
+                            </div>
+                            
+                        </div>
                         
+                                            
+                        <!--这是左边的内容-->
                         <div class="main_contentbg_big">
                             
                             <div class="main_content_top_big">
@@ -190,8 +227,6 @@
                                 <div class="main_user_rztitle">
                                     发布文字
                                 </div>
-                                
-                                <form action="#" name="f" method="post">
                                 
                                 <div class="main_user_rzcontent">
                                 	
@@ -220,7 +255,6 @@
                                     
                                 </div>
                                 
-                                </form>
                                 
                             </div>
                             
@@ -231,6 +265,8 @@
                             
                         </div>
                     </div>
+                    
+                    </form>
                     <!--main_userbg   end-->
                     
                 </div>
